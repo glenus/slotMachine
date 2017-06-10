@@ -1,0 +1,610 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>jQuery Slot Machine</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="dist/jquery.slotmachine.css" type="text/css" media="screen" />
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="dist/jquery.slotmachine.js"></script>
+
+	</head>
+
+	<body>
+		<div class="header-line"></div>
+
+		<!-- Badge -->
+		<a href="https://github.com/josex2r/jQuery-SlotMachine"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+
+
+		<!-- Intro -->
+		<!--<header>
+			<p>Shuffle your 'divs', randomize your results or make an slide, <br/>
+				<a href="https://github.com/josex2r/jQuery-SlotMachine">jQuery-SlotMachine</a> is not a simple animation plugin</p>
+		</header>-->
+
+
+		<!-- Flight example -->
+		<div id="plane" class="container">
+			<div class="row content">
+				<div class="col-md-12 col-lg-8 col-lg-offset-2">
+					<div class="well">
+						<h3>Discover Reliable!</h3>
+
+						<div id="planeMachine">
+							<div class="text-center">
+								Professionalism <!--<span class="badge">46 <span class="glyphicon glyphicon-euro"></span></span>-->
+							</div>
+							<div class="text-center">
+								Integrity <!--<span class="badge">30 <span class="glyphicon glyphicon-euro"></span></span>-->
+							</div>
+							<div class="text-center">
+								Teamwork <!--<span class="badge">237 <span class="glyphicon glyphicon-euro"></span></span>-->
+							</div>
+							<div class="text-center">
+								Innovation <!--<span class="badge">undefined <span class="glyphicon glyphicon-euro"></span></span>-->
+							</div>
+						</div>
+
+						<script>
+							$(document).ready(function(){
+								$("#planeMachine").slotMachine({
+									active	: 1,
+									delay	: 450,
+									auto	: 1500
+								});
+							});
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="randomize">
+			<div class="content container" style="text-align: center;max-width: 1000px;">
+				<h1 id="resultName">Be in luck!</h1>
+
+				<div class="row">
+					<div class="col-xs-4">
+						<div>
+							<div id="machine1" class="randomizeMachine">
+								<div><img src="img/slot0.png" /></div>
+								<div><img src="img/slot1.png" /></div>
+								<div><img src="img/slot2.png" /></div>
+								<div><img src="img/slot3.png" /></div>
+								<div><img src="img/slot4.png" /></div>
+								<div><img src="img/slot5.png" /></div>
+								<div><img src="img/slot6.png" /></div>
+                                <div><img src="img/slot7.png" /></div>
+								<div><img src="img/slot8.png" /></div>
+                                <div><img src="img/slot9.png" /></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-4">
+						<div>
+							<div id="machine2" class="randomizeMachine">
+                                <div><img src="img/slot0.png" /></div>
+								<div><img src="img/slot1.png" /></div>
+								<div><img src="img/slot2.png" /></div>
+								<div><img src="img/slot3.png" /></div>
+								<div><img src="img/slot4.png" /></div>
+								<div><img src="img/slot5.png" /></div>
+								<div><img src="img/slot6.png" /></div>
+                                <div><img src="img/slot7.png" /></div>
+								<div><img src="img/slot8.png" /></div>
+                                <div><img src="img/slot9.png" /></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-4">
+						<div>
+							<div id="machine3" class="randomizeMachine">
+								<div><img src="img/slot0.png" /></div>
+                                <div><img src="img/slot1.png" /></div>
+								<div><img src="img/slot2.png" /></div>
+								<div><img src="img/slot3.png" /></div>
+								<div><img src="img/slot4.png" /></div>
+								<div><img src="img/slot5.png" /></div>
+								<div><img src="img/slot6.png" /></div>
+                                <div><img src="img/slot7.png" /></div>
+								<div><img src="img/slot8.png" /></div>
+                                <div><img src="img/slot9.png" /></div>                                
+							</div>
+						</div>
+						<!--<div id="machine1Result" class="col-xs-4 machineResult">Index: 0</div>
+						<div id="machine2Result" class="col-xs-4 machineResult">Index: 1</div>
+						<div id="machine3Result" class="col-xs-4 machineResult">Index: 2</div>-->
+					</div>
+                    
+                    <div class="col-xs-4">
+						<div>
+							<div id="machine4" class="randomizeMachine">
+                                <div><img src="img/slot0.png" /></div>
+                                <div><img src="img/slot1.png" /></div>
+								<div><img src="img/slot2.png" /></div>
+								<div><img src="img/slot3.png" /></div>
+								<div><img src="img/slot4.png" /></div>
+								<div><img src="img/slot5.png" /></div>
+								<div><img src="img/slot6.png" /></div>
+                                <div><img src="img/slot7.png" /></div>
+								<div><img src="img/slot8.png" /></div>
+                                <div><img src="img/slot9.png" /></div>
+                                <div><img src="img/slotQ.png" /></div>
+							</div>
+						</div>
+					</div>
+                    
+                    <div class="col-xs-4">
+                        <div>
+                            <div id="machine5" class="randomizeMachine">
+                                <div><img src="img/slot0.png" /></div>
+								<div><img src="img/slot1.png" /></div>
+                                <div><img src="img/slot2.png" /></div>
+                                <div><img src="img/slot3.png" /></div>
+                                <div><img src="img/slot4.png" /></div>
+                                <div><img src="img/slot5.png" /></div>
+                                <div><img src="img/slot6.png" /></div>
+                                <div><img src="img/slot7.png" /></div>
+								<div><img src="img/slot8.png" /></div>
+                                <div><img src="img/slot9.png" /></div>                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-4">
+                        <div>
+                            <div id="machine6" class="randomizeMachine">
+                                <div><img src="img/slot0.png" /></div>
+								<div><img src="img/slot1.png" /></div>
+                                <div><img src="img/slot2.png" /></div>
+                                <div><img src="img/slot3.png" /></div>
+                                <div><img src="img/slot4.png" /></div>
+                                <div><img src="img/slot5.png" /></div>
+                                <div><img src="img/slot6.png" /></div>
+                                <div><img src="img/slot7.png" /></div>
+								<div><img src="img/slot8.png" /></div>
+                                <div><img src="img/slot9.png" /></div>                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-4">
+                        <div>
+                            <div id="machine7" class="randomizeMachine">
+                                <div><img src="img/slot0.png" /></div>
+								<div><img src="img/slot1.png" /></div>
+                                <div><img src="img/slot2.png" /></div>
+                                <div><img src="img/slot3.png" /></div>
+                                <div><img src="img/slot4.png" /></div>
+                                <div><img src="img/slot5.png" /></div>
+                                <div><img src="img/slot6.png" /></div>
+                                <div><img src="img/slot7.png" /></div>
+								<div><img src="img/slot8.png" /></div>
+                                <div><img src="img/slot9.png" /></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-4">
+                        <div>
+                            <div id="machine8" class="randomizeMachine">
+                                <div><img src="img/slot0.png" /></div>
+								<div><img src="img/slot1.png" /></div>
+                                <div><img src="img/slot2.png" /></div>
+                                <div><img src="img/slot3.png" /></div>
+                                <div><img src="img/slot4.png" /></div>
+                                <div><img src="img/slot5.png" /></div>
+                                <div><img src="img/slot6.png" /></div>
+                                <div><img src="img/slot7.png" /></div>
+								<div><img src="img/slot8.png" /></div>
+                                <div><img src="img/slot9.png" /></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+				</div>
+
+				<div>
+					<div class="btn-group btn-group-randomize" role="group">
+						<div id="ranomizeButton" type="button" class="btn btn-danger btn-lg">Shuffle</div>
+					</div>
+					<div class="btn-group btn-group-randomize" role="group">
+					    <a href="#openModal" type="button" class="btn btn-danger btn-lg">Name List</a>
+						<!--<div id="createNamelist" type="button" class="btn btn-danger btn-lg">Name List</div>-->
+					</div>
+				
+				</div>
+			</div>
+		</div>
+		
+		<script>
+			var numList = ["01099835","01099968","01099982","01099984","01100012","01100121","01100133","01100156","01100164","01100220","01100222","01100233","01100236","01100246","00007859","00007951","00008251","00008933","00009891","00010213","00010393","00010428","00010531","00010699","00010837","00010917","00012200","00012244","00012277","00012380","00014446","00014560","00014617","00014628","00014764","00015348","00015495","00015622","00015757","00015791","00016819","00017460","00017971","00018760","00019004","00019399","00019413","00019639","00019695","00019946","00020299","00020506","00020799","00020915","00020982","00021237","00021431","00021533","00021680","00021748","00021793","00021828","00022300","00022924","00022935","00023064","00023633","00023893","00024262","00024400","00024455","00024999","00025108","00025459","00025675","00026099","00026362","00026828","00026895","00026920","00027015","00027195","00027253","00027480","00027640","00028097","00028235","00030071","00030515","00030753","00031086","00031428","00031779","00031906","00031951","00031962","00032068","00032739","00032933","00032988","00033040","00033062","00033288","00033335","00033573","00033686","00033755","00033777","00033959","00033971","00034011","00034215","00034282","00034362","00034373","00034384","00034942","00034986","00035037","00035275","00035333","00035719","00036439","00036451","00036519","00036520","00036768","00036917","00037159","00037579","00037637","00037682","00037728","00037853","00037864","00038039","00038255","00038802","00039748","00040024","00040046","00040079","00040251","00040262","00040320","00040422","00040659","00040706","00040808","00041175","00041186","00041255","00041299","00041960","00042317","00042475","00042748","00043220","00043275","00043300","00043322","00043402","00043582","00043719","00043775","00043811","00044359","00044428","00044519","00044520","00044600","00044724","00044735","00044928","00045057","00045080","00045137","00045160","00045217","00045295","00045422","00045455","00045499","00045671","00045864","00046073","00046108","00046324","00046415","00046471","00046846","00047293","00047475","00047851","00048060","00048195","00048366","00048651","00049371","00049473","00049508","00049677","00050000","00050011","00050077","00050204","00050828","00050851","00051264","00051333","00051651","00052031","00052166","00052257","00052439","00052508","00052644","00052699","00052779","00052939","00053331","00053633","00053649","00053677","00053714","00053748","00053751","00053763","00053770","00053801","00053802","00053805","00053813","00053819","00053834","00053859","00053864","00053889","00053905","00053924","00053947","00053949","00053959","00054022","00054050","00054056","00054059","00054084","00054087","00054089","00054114","00054124","00054145","00054166","00054172","00054173","00054183","00054221","00054232","00054254","00054261","00054265","00054274","00054276","00054312","00054364","00054368","00054399","00054416","00054432","00054433","00054440","00054447","00054473","00054489","00054505","00054516","00054537","00054569","00054585","00054587","00054606","00054611","00054636","00054653","00054665","00054685","00054701","00054721","00054723","00054728","00054767","00054770","00054788","00054791","00054810","00054812","00054828","00054840","00054872","00054901","00054911","00054921","00054937","00054956","00054959","00054961","00054963","00054967","00054969","00054977","00054978","00055016","00055026","00055030","00055052","00055058","00055135","00055156","00055160","00055166","00055171","00055176","00055211","00055248","00055252","00055266","00055278","00055283","00055305","00055356","00055377","00055411","00055466","00055471","00055486","00055490","00055534","00055551","00055552","00055565","00055574","00055585","00055603","00055609","00055613","00055621","00055650","00055692","00055732","00055758","00055772","00055796","00055826","00055859","00055879","00055955","00055971","00056004","00056067","00056098","00056109","00056110","00056116","00056139","00056152","00056162","00056169","00056181","00056185","00056341","00056359","00056368","00056377","00056385","00056400","00056414","00056424","00056446","00056451","00056454","00056459","00056463","00056491","00056510","00056521","00056536","00056550","00056552","00056557","00056566","00056571","00056572","00056584","00056595","00056597","00056610","00056623","00056629","00056630","00056650","00056654","00056671","00090363","000Q2072","000Q2419","000Q2532","000Q2600","000Q2654","000Q2683","000Q2691","000Q2749","000Q2956","000Q4100","000Q4211","000Q4269","000Q4297","000Q4314","000Q4434","000Q4665","000Q4679","000Q4769","000Q5027","000Q5088","000Q5115","000Q5134","000Q5139","000Q5192","000Q5334","000Q5336","000Q5350","000Q5352","000Q5353","000Q5359","000Q5483"];
+			var nameList = ["郭怡君","王鈞逸","張國瑋","潘政傑","周昱棋","邱子秦","陳怡廷","王柏勳","蔡俊彥","王佳儀","鄭意憲","胡文輝","黃奕翔","莊捷如","陳榮盛","高龍泉","廖峰璋","薛德豊","張玉書","陳淨莊","吳國進","劉麗嬌","包蕙娣","陳立昌","呂健行","黃振釗","謝麗玲","王月莉","劉素秋","李卓翰","張昆典","劉智明","呂理安","陳禹文","林錫潭","張奇賢","郭賢忠","潘鳳珠","李明達","張基","陳雲琴","薛文陞","王詠華","徐鴻森","王在洋","朱建興","林俊豪","鄔明珠","賀維中","邱國慶","李文漢","李淑慧","蘇東洲","徐添發","曾志明","李天士","李永林","洪銘道","高明瑞","楊文志","吳錫賢","胡琮琦","莊雙泉","蔡永銘","劉淑蓉","張麗鳳","丁英欽","徐淳基","許霰方","鄭克成","余健生","陳達軒","周澤玲","朱美津","林啟修","江秀丹","張啟鴻","張臻菱","汪金全","張正忠","陳廷凱","蕭時駒","牛德育","吳啟文","倪佩貞","程文彬","葉一美","鄭順贏","趙汝康","楊翌瑛","林昭穎","林建民","黃文力","趙國華","柳朝彰","陳曉鳳","魏騰輝","劉美靨","黃文欽","林炳焜","吳虹曄","廖大傳","管源","顏建隆","唐文聰","陳坤楷","陳福星","廖學坤","洪吉成","楊佩君","林宜靜","許美玲","陳麗娟","陳淑娟","陳淑惠","張美玲","林銘濱","林昭聰","高永和","陳美瑤","盧盛南","林春和","王湘銀","謝慧珍","費雅琴","陳慧玲","林彥宏","胡美貞","陳厚銘","秦有道","邱珠靖","古若玲","周素娟","吳維霖","宋開源","黃進益","卓朝慶","杜文傳","劉覲銘","吳政鋒","鄭秀卿","盧嵐杰","高振源","曾慶寧","邱孟瑤","曾佳弘","劉慧美","楊淑滿","鄭琦","陳國忠","張家麟","曾秀琴","陳坐源","李連財","羅佩珍","胡明廷","張岐衡","林玉婷","劉美利","高玉如","陳香君","陳鳳蘋","吳沁華","胡榮裕","黃錕錫","于景華","方東旭","簡志明","汪麗諆","鄔麗孟","湯鴻志","向川澤","林立千","吳嘉明","鄭朝陽","汪嘉敏","張雅玲","魏玉千","黃鳳瑜","劉麗君","魏文娟","李宜佳","李雲麗","周書平","何麗嫺","林國川","郭嚴","呂立倫","趙建勛","林守璞","陳姿伶","黃奇傑","張明輝","章志川","陳怡秀","林金德","徐禮道","林宜萱","楊艷琇","鍾嘉文","楊子宗","石瑤階","左蘭玉","趙裕禎","沈元璋","汪文心","陳皓","陳順良","彭盛春","陳美玉","周敬閔","王素華","陳文鴻","王金龍","楊忠隆","林永泰","林振寧","陳穎健","李慶鋒","黃俊豪","陳仕展","何國輝","林世益","謝任江","陳彥宏","林耀銓","李耀麟","李慶祥","邱于誠","洪如彥","邱志遠","劉育賓","曾勝和","邱宜傑","吳佳燕","黃怡誠","郭宏鑫","謝明賢","葉昱麟","謝品一","楊文志","邱學源","楊凱同","林泱廷","林宗賢","羅昱盈","賴姿穎","徐彥庭","陳映先","劉家伶","王勇文","陳雅婷","涂兆躒","莊孟諺","楊琦珍","黃德鑫","羅俊良","陳聖中","李伯男","潘宏凱","翁嘉宏","莊雅雯","周世達","曾小芳","史長志","陳麒堯","李英偉","吳志宏","田世昌","黃勻良","劉映宜","林韋綸","許景翔","李存厚","徐沛琳","吳振東","吳振漢","林佩茹","陳維捷","朱桂瑩","李世綸","方隆誠","吳宇璟","郭茵萍","朱忠一","許雯絜","徐致勇","邱明崑","謝建鋒","陳心妮","鍾易樺","陳世豪","單啟齊","鐔孝明","陳重邦","陳玉雯","廖千瑤","楊忠諺","王鴻遠","蔡君平","吳昌霖","林錦裕","林哲良","陳孟堯","賴志銘","曾志雄","蔡東霖","方巽禾","陳偉誠","許靜宜","林杰","白家欣","陳秉祥","林建宏","張力壬","楊志鋒","張育政","陳祥嘉","郭耀文","陳冠亨","郭裕榮","郭耿豪","鄭家凱","潘建華","陳啟東","林建華","劉威麟","翁稚荏","黃奕翔","范玉明","謝一銘","林菀婷","林炳輝","張鈞維","高堂傑","邵芷婷","胡文才","呂牧涵","黃朝裕","劉崇成","黃慧敏","楊鈞成","林鑫汝","謝其傑","廖倚均","梁書懷","詹琇雅","陳春展","陳永輝","黃俊強","趙尉谷","劉祐帆","魏道明","林琮軒","林庭安","陳奕豪","邱偉誠","黃稚雅","曾衡韜","謝欣歷","羅柏晴","許尹碩","林仁山","楊博然","許竣洋","羅安凱","曾子騰","紀佳伶","李漢珽","朱峻廷","李文琳","王凱平","邱暐智","程奕翔","唐佳","施宏佳","林宥鑫","羅秀玉","周宜賢","王勝文","何金福","王芝婷","張逢意","陳儀禎","張子都","陳啟仁","李怡清","張云","吳加惠","王蕾喬","陶奕","簡育綸","徐尉珍","許翡珊","李育軒","許瑋淳","周詩評","黃星星","屈耿立","鄭皓瑋","李宗儒","羅振傑","葉南更","吳菽芳","許美玲","陳玫君","陳蕾媛","陳蕾蕙","張毓馨","呂舜文","詹憶婷","蔡凡愉","曾意文","周敏華","張梅花","張麗雪","劉偉雄","陳靜枝","陳思民","黃詩婷","童緒雲","黃紹修","楊俊彥","楊晴","林寶珠","鄭志勤","侯巧蕙","郭怡廷","潘扶安","呂哲嘉","胡睿芸","吳羽婷","陳天昀","嚴雪萁","李科甲"];
+			var randomResult = new Array(8);
+			var randomNum;
+			var shuffleCount = 0;
+			var luckyNamelist = [];
+			var luckyNumlist = [];
+            var displayName;
+			$(document).ready(function(){
+				var machine1 = $("#machine1").slotMachine({
+					active	: 7,
+					delay	: 500,
+					randomize: function(){
+						return randomResult[0];
+					}
+				});
+
+				var machine2 = $("#machine2").slotMachine({
+					active	: 7,
+					delay	: 500,
+					direction: 'down',
+					randomize: function(){
+						return randomResult[1];
+					}
+				});
+				var machine3 = $("#machine3").slotMachine({
+					active	: 7,
+					delay	: 500,
+					randomize: function(){
+						return randomResult[2];
+					}
+				});
+				var machine4 = $("#machine4").slotMachine({
+					active	: 7,
+					delay	: 500,
+					randomize: function(){
+						if(randomResult[3]==="Q")return 10;
+						else return randomResult[3];
+					}
+				});
+                var machine5 = $("#machine5").slotMachine({
+                    active	: 7,
+                    delay	: 500,
+                    direction: 'down',
+					randomize: function(){
+						return randomResult[4];
+					}
+                });
+                var machine6 = $("#machine6").slotMachine({
+                    active	: 7,
+                    delay	: 500,
+                    direction: 'down',
+					randomize: function(){
+						return randomResult[5];
+					}
+                });
+                var machine7 = $("#machine7").slotMachine({
+                    active	: 7,
+                    delay	: 500,
+					randomize: function(){
+						return randomResult[6];
+					}
+                });
+                var machine8 = $("#machine8").slotMachine({
+                    active  : 7,
+                    delay   : 500,
+					randomize: function(){
+						return randomResult[7];
+					}
+                });
+                function onComplete(active){
+					$("#resultName").text(displayName);
+			
+					switch(this.element[0].id){
+						case 'machine1':
+							$("#machine1Result").text("Index: "+this.active);
+							break;
+						case 'machine2':
+							$("#machine2Result").text("Index: "+this.active);
+							break;
+						case 'machine3':
+							$("#machine3Result").text("Index: "+this.active);
+							break;
+                        case 'machine4':
+                            $("#machine3Result").text("Index: "+this.active);
+                        break;
+                        case 'machine5':
+                            $("#machine3Result").text("Index: "+this.active);
+                        break;
+                        case 'machine6':
+                            $("#machine3Result").text("Index: "+this.active);
+                        break;
+                        case 'machine7':
+                            $("#machine3Result").text("Index: "+this.active);
+                        break;
+                        case 'machine8':
+                            $("#machine3Result").text("Index: "+this.active);
+                        break;
+						default:
+						break;
+                    }
+				};
+				
+				
+
+				function shuffle(){
+					randomNum = Math.floor(Math.random()*numList.length);
+					randomResult = numList[randomNum];
+					luckyNamelist[shuffleCount] = nameList[randomNum];
+					luckyNumlist[shuffleCount] = randomResult;
+					var outputList = "";
+					console.log(shuffleCount);
+					shuffleCount++;
+					for(var i = 0;i<shuffleCount;i++){
+						outputList += luckyNumlist[i] + " " + luckyNamelist[i] + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+						if(i%3 == 2)outputList += "<br />";
+						console.log(outputList);
+					}
+					$("#recipients").html(outputList);
+					
+					numList.splice(randomNum,1);
+					/*console.log(randomNum);
+					console.log(numList.length);
+					console.log(randomResult);
+					console.log(luckyNamelist);
+					console.log(luckyNumlist);*/
+					/*for(var i = 7;i>=0;i--){
+						resultArray[i] = randomResult[i];
+						randomResult= math.floor(randomResult/10);
+					}*/
+					displayName = nameList[randomNum];
+					nameList.splice(randomNum,1);
+					machine1.shuffle(5, onComplete);
+					setTimeout(function(){
+						machine2.shuffle(5, onComplete);
+					}, 200);
+
+					setTimeout(function(){
+						machine3.shuffle(5, onComplete);
+					}, 400);
+					setTimeout(function(){
+						machine4.shuffle(5, onComplete);
+					}, 600);
+                    setTimeout(function(){
+                        machine5.shuffle(5, onComplete);
+                    }, 800);
+                    setTimeout(function(){
+                        machine6.shuffle(5, onComplete);
+                    }, 800);
+                    setTimeout(function(){
+                        machine7.shuffle(5, onComplete);
+                    }, 800);
+                    setTimeout(function(){
+                        machine8.shuffle(5, onComplete);
+                    }, 800);
+				};
+				 
+				$("#ranomizeButton").click(function(){
+					shuffle();
+                });
+				/*$("#createNamelist").click(function(){
+					var myWindow = window.open("", "MsgWindow", "width=1000,height=500");
+					myWindow.document.writeln("<p>The list of award recipients:</p>"+luckyNumlist+"<br>"+luckyNamelist);
+				});*/
+				$(document).ready(function(){
+					$(document).keydown(function(e){
+					    console.log(e);
+						if(e.keyCode === 33 || e.keyCode === 34){
+							shuffle();
+						}
+					});
+				});
+			});
+		</script>
+        
+		<div id="openModal" class="modalDialog">
+			<div>
+				<a href="#close" title="Close" class="close">X</a>
+				<h2>The List of Award Recipients</h2>
+				<ppap id="recipients"></ppap>
+			</div>
+		</div>
+
+		<!-- Watch example -->
+		<!--<div id="watch" style="padding-top:50px;">
+			<div class="content">
+				<h1>Slide the items</h1>
+                
+				<div class="small">
+					<div id="watch1">
+						<div><span class="glyphicon glyphicon-volume-up"></span></div>
+						<div><span class="glyphicon glyphicon-envelope"></span></div>
+						<div><span class="glyphicon glyphicon-off"></span></div>
+						<div><span class="glyphicon glyphicon-music"></span></div>
+						<div><span class="glyphicon glyphicon-map-marker"></span></div>
+					</div>
+				</div>
+
+				<div>
+					<div class="btn-group btn-group-justified btn-group-watch" role="group">
+						<div id="slotMachineButtonPrev" type="button" class="btn btn-primary btn-lg">Prev</div>
+						<div id="slotMachineButtonNext" type="button" class="btn btn-primary btn-lg">Next</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<script>
+			$(document).ready(function(){
+				var watch = $("#watch1").slotMachine();
+
+				$("#slotMachineButtonPrev").click(function(){
+					watch.prev();
+				});
+
+				$("#slotMachineButtonNext").click(function(){
+					watch.next();
+				});
+			});
+		</script>-->
+
+
+		<!--<div id="triky">
+			<div class="content" style="text-align: center">
+				<h1>Triky your results</h1>
+
+				<div class="row">
+					<div style="margin: auto;">
+						<div id="triky1">
+							<div>
+								<img src="img/cookie.png" />
+							</div>
+							<div>
+								<img src="img/food1.jpg" />
+							</div>
+							<div>
+								<img src="img/food2.jpg" />
+							</div>
+							<div>
+								<img src="img/food3.jpg" />
+							</div>
+						</div>
+						<div>
+							<div class="btn-group btn-group-justified btn-group-triky" role="group">
+								<div id="trikyShuffle" type="button" class="btn btn-primary btn-lg">Gimme cookies!</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="clearfix"></div>
+		</div>
+		<script>
+			$(document).ready(function(){
+				//Fake machine 2 - auto
+				var triky = $("#triky1").slotMachine({
+					active	: 2,
+					randomize: function(){
+						return 0;
+					}
+				});
+
+				$("#trikyShuffle").click(function(){
+					triky.shuffle(3);
+				});
+			});
+		</script>-->
+
+
+		<!-- Slot machine example -->
+		<!--<div id="casino" style="padding-top:50px;">
+			<div class="content">
+				<h1>Use the API</h1>
+
+				<div>
+					<div id="casino1" class="slotMachine" style="margin-left: -65px;">
+						<div class="slot slot1"></div>
+						<div class="slot slot2"></div>
+						<div class="slot slot3"></div>
+						<div class="slot slot4"></div>
+						<div class="slot slot5"></div>
+						<div class="slot slot6"></div>
+                        <div class="slot slot7"></div>
+					</div>
+
+					<div id="casino2" class="slotMachine">
+						<div class="slot slot1"></div>
+						<div class="slot slot2"></div>
+						<div class="slot slot3"></div>
+						<div class="slot slot4"></div>
+						<div class="slot slot5"></div>
+						<div class="slot slot6"></div>
+                        <div class="slot slot7"></div>
+					</div>
+
+					<div id="casino3" class="slotMachine">
+						<div class="slot slot1"></div>
+						<div class="slot slot2"></div>
+						<div class="slot slot3"></div>
+						<div class="slot slot4"></div>
+						<div class="slot slot5"></div>
+						<div class="slot slot6"></div>
+                        <div class="slot slot7"></div>
+					</div>
+
+					<div class="btn-group btn-group-justified btn-group-casino" role="group">
+						<div id="slotMachineButtonShuffle" type="button" class="btn btn-primary btn-lg">Shuffle!</div>
+						<div id="slotMachineButtonStop" type="button" class="btn btn-primary btn-lg">Stop!</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<script>
+			$(document).ready(function(){
+				var machine4 = $("#casino1").slotMachine({
+					active	: 0,
+					delay	: 500
+				});
+
+				var machine5 = $("#casino2").slotMachine({
+					active	: 1,
+					delay	: 500
+				});
+
+				machine6 = $("#casino3").slotMachine({
+					active	: 2,
+					delay	: 500
+				});
+
+				var started = 0;
+
+				$("#slotMachineButtonShuffle").click(function(){
+					started = 3;
+					machine4.shuffle();
+					machine5.shuffle();
+					machine6.shuffle();
+				});
+
+				$("#slotMachineButtonStop").click(function(){
+					switch(started){
+						case 3:
+							machine4.stop();
+							break;
+						case 2:
+							machine5.stop();
+							break;
+						case 1:
+							machine6.stop();
+							break;
+					}
+					started--;
+				});
+			});
+		</script>-->
+
+
+		<footer>
+			<div class="content">
+				<div id="textMachine" style="text-align: center">
+					<div>HSEMD</div>
+					<div>CTCI</div>
+					<div>THANKS!</div>
+				</div>
+				<script>
+					$(document).ready(function(){
+						$("#textMachine").slotMachine({
+							active	: 1,
+							delay	: 450,
+							auto	: 1500
+						});
+					});
+				</script>
+			</div>
+		</footer>
+
+	</body>
+</html>
